@@ -6,7 +6,7 @@ Created on Mon Apr  4 19:53:05 2022
 """
 
 
-limit = int((10**9)/2)
+limit = 50000
 
 def getConcat(num):
     
