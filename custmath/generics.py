@@ -12,7 +12,7 @@ def odd(num:int):
     return num % 2 != 0
 
 
-def sieveOfErathostenes(limit:int):
+def sieveOfErathostenes(limit:int,ordered:bool=False):
     numbers = [x for x in range(limit)]
     
     for i in range(2,limit):
@@ -21,7 +21,10 @@ def sieveOfErathostenes(limit:int):
                 if i != j:
                     numbers[j] = 0
     
-    return sorted(set(numbers) ^ {0,1})
+    if ordered:
+        return sorted(set(numbers) ^ {0,1})
+    
+    return set(numbers) ^ {0,1}
 
 
 def isPrime(num:int):
