@@ -1,1 +1,6 @@
 .idea
+.html
+.spec
+/build/
+/dist/
+/__pycache__/
