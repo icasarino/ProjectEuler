@@ -4,7 +4,6 @@ Created on Mon Apr  4 21:30:05 2022
 
 @author: Ignacio
 """
-
 concat = ''
 i = 1
 while len(concat) < 1000000:
