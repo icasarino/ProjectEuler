@@ -26,9 +26,7 @@ def validLength(concat):
 def isPandigital(concat):
     
     l = ['1','2','3','4','5','6','7','8','9']
-    
-    num = [elem for elem in l if elem in concat]
-    
+    num = [elem for elem in l if elem in concat]   
     return validLength(concat) and len(num) == 9
 
 

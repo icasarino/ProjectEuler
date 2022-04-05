@@ -39,4 +39,20 @@ def rotateLeft(num:int,amount:int):
 
 def rotateRight(num:int,amount:int):    
     numStr = str(num)
-    return numStr[-amount:] + numStr[:-amount]    
+    return numStr[-amount:] + numStr[:-amount]
+
+def isPandigital(num:int,n:int=False):
+    
+    numStr = str(num)
+    
+    ''' TO CHECK FOR SPECIFIC PANDIGITAL LENGTHS '''
+    if not n:
+        n = len(numStr) 
+    ''' '''
+    
+    l = list(map(str,list(range(1,n+1))))
+
+    nums = [elem for elem in l if elem in numStr]   
+    return len(numStr) == n and len(nums) == n
+
+
